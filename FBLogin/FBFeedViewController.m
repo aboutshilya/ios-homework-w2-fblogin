@@ -10,6 +10,12 @@
 
 @interface FBFeedViewController ()
 
+- (void) loadFeeds;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *feedView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingView;
+
+
 @end
 
 @implementation FBFeedViewController
@@ -27,6 +33,27 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.navigationItem.title = @"News Feeds";
+    
+    self.navigationController.navigationBar.BarTintColor = [UIColor colorWithRed:59.0f/255.0f green:89.0f/255.0f blue:152.0f/255.0f alpha:1.0f];
+    self.navigationController.navigationBar.translucent = NO;
+    
+    self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil];
+    
+    [self performSelector:@selector(loadFeeds) withObject:nil afterDelay:2];
+    
+    
+}
+
+- (void)loadFeeds{
+    
+    [self.loadingView stopAnimating];
+    
+    UIImageView *feedImg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"FeedView"]];
+    feedImg.frame = CGRectMake(0, 44, feedImg.frame.size.width, feedImg.frame.size.height);
+    
+    [self.feedView addSubview:feedImg];
 }
 
 - (void)didReceiveMemoryWarning

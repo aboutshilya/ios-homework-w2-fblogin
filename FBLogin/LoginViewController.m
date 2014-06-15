@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import "FBFeedViewController.h"
+#import "FeedNavigationViewController.h"
 
 @interface LoginViewController ()
 
@@ -133,7 +133,7 @@
 
 - (IBAction)onLoginButton:(id)sender {
     
-    if([self.passwordTextField.text  isEqual: @"abc123"] && [self.idTextField.text  isEqual: @"yahoo"]){
+    if([self.passwordTextField.text  isEqual: @"0000"] && [self.idTextField.text  isEqual: @"yahoo"]){
     
         self.loginButton.selected = YES;
         [self.loadingView startAnimating];
@@ -152,14 +152,20 @@
 
 - (void)loadFeedView {
     [self.loadingView stopAnimating];
+
+    FeedNavigationViewController *feedNavVC = [[FeedNavigationViewController alloc] init];
     
-    UIViewController *feedVC =  [[FBFeedViewController alloc] init];
+    UITabBarController *tabBarController = [[UITabBarController alloc] initWithNibName:@"tabBarController" bundle:nil];
+
+    tabBarController.tabBar.frame = CGRectMake(0, 524, 320, 320);
     
-    feedVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"TabBar"];
     
-    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:feedVC];
-    
-    [self presentViewController:navigationController animated:YES completion: nil];
+    tabBarController.viewControllers = @[feedNavVC];
+
+   
+    [self presentViewController:tabBarController animated:YES completion: nil];
+   
 }
 
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D66EF86C194E1A45001B3362 /* FeedNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66EF86A194E1A45001B3362 /* FeedNavigationViewController.m */; };
+		D66EF86D194E1A45001B3362 /* FeedNavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66EF86B194E1A45001B3362 /* FeedNavigationViewController.xib */; };
 		D6CDF2D8194CC91C004951D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CDF2D7194CC91C004951D1 /* Foundation.framework */; };
 		D6CDF2DA194CC91C004951D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CDF2D9194CC91C004951D1 /* CoreGraphics.framework */; };
 		D6CDF2DC194CC91C004951D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CDF2DB194CC91C004951D1 /* UIKit.framework */; };
@@ -21,8 +23,6 @@
 		D6CDF2FD194CC91C004951D1 /* FBLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDF2FC194CC91C004951D1 /* FBLoginTests.m */; };
 		D6CDF309194CC93D004951D1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDF307194CC93D004951D1 /* LoginViewController.m */; };
 		D6CDF30A194CC93D004951D1 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CDF308194CC93D004951D1 /* LoginViewController.xib */; };
-		D6CDF30E194D1F41004951D1 /* FBFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CDF30C194D1F41004951D1 /* FBFeedViewController.m */; };
-		D6CDF30F194D1F41004951D1 /* FBFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CDF30D194D1F41004951D1 /* FBFeedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D66EF869194E1A45001B3362 /* FeedNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedNavigationViewController.h; sourceTree = "<group>"; };
+		D66EF86A194E1A45001B3362 /* FeedNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedNavigationViewController.m; sourceTree = "<group>"; };
+		D66EF86B194E1A45001B3362 /* FeedNavigationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedNavigationViewController.xib; sourceTree = "<group>"; };
 		D6CDF2D4194CC91C004951D1 /* FBLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CDF2D7194CC91C004951D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6CDF2D9194CC91C004951D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,9 +58,6 @@
 		D6CDF306194CC93D004951D1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D6CDF307194CC93D004951D1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D6CDF308194CC93D004951D1 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		D6CDF30B194D1F41004951D1 /* FBFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFeedViewController.h; sourceTree = "<group>"; };
-		D6CDF30C194D1F41004951D1 /* FBFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFeedViewController.m; sourceTree = "<group>"; };
-		D6CDF30D194D1F41004951D1 /* FBFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBFeedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,9 +124,9 @@
 				D6CDF306194CC93D004951D1 /* LoginViewController.h */,
 				D6CDF307194CC93D004951D1 /* LoginViewController.m */,
 				D6CDF308194CC93D004951D1 /* LoginViewController.xib */,
-				D6CDF30B194D1F41004951D1 /* FBFeedViewController.h */,
-				D6CDF30C194D1F41004951D1 /* FBFeedViewController.m */,
-				D6CDF30D194D1F41004951D1 /* FBFeedViewController.xib */,
+				D66EF869194E1A45001B3362 /* FeedNavigationViewController.h */,
+				D66EF86A194E1A45001B3362 /* FeedNavigationViewController.m */,
+				D66EF86B194E1A45001B3362 /* FeedNavigationViewController.xib */,
 			);
 			path = FBLogin;
 			sourceTree = "<group>";
@@ -235,10 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6CDF30F194D1F41004951D1 /* FBFeedViewController.xib in Resources */,
 				D6CDF2E2194CC91C004951D1 /* InfoPlist.strings in Resources */,
 				D6CDF2EA194CC91C004951D1 /* Images.xcassets in Resources */,
 				D6CDF30A194CC93D004951D1 /* LoginViewController.xib in Resources */,
+				D66EF86D194E1A45001B3362 /* FeedNavigationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6CDF30E194D1F41004951D1 /* FBFeedViewController.m in Sources */,
+				D66EF86C194E1A45001B3362 /* FeedNavigationViewController.m in Sources */,
 				D6CDF2E8194CC91C004951D1 /* AppDelegate.m in Sources */,
 				D6CDF2E4194CC91C004951D1 /* main.m in Sources */,
 				D6CDF309194CC93D004951D1 /* LoginViewController.m in Sources */,
