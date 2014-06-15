@@ -20,5 +20,5 @@ Which required and optional stories have you completed?
 
 
 GIF walkthrough
-![Screenshot] (https://github.com/aboutshilya/ios-homework-w2-fblogin/blob/master/record.gif)
+![Screenshot] (https://raw.githubusercontent.com/aboutshilya/ios-homework-w2-fblogin/master/record.gif)
 
