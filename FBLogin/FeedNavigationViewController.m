@@ -32,8 +32,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.scrollView.contentSize = CGSizeMake(320,540);
+    
+    self.scrollView.contentInset=UIEdgeInsetsMake(0,0.0,44.0,0.0);
+    self.scrollView.scrollIndicatorInsets=UIEdgeInsetsMake(0,0.0,44.0,0.0);
     
     [self performSelector:@selector(loadFeed) withObject:nil afterDelay:2];
+   
     
 }
 
