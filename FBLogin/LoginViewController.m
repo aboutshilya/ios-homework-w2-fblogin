@@ -155,13 +155,15 @@
 
     FeedNavigationViewController *feedNavVC = [[FeedNavigationViewController alloc] init];
     
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:feedNavVC];
+    
     UITabBarController *tabBarController = [[UITabBarController alloc] initWithNibName:@"tabBarController" bundle:nil];
 
     tabBarController.tabBar.frame = CGRectMake(0, 524, 320, 320);
     
     tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"TabBar"];
     
-    tabBarController.viewControllers = @[feedNavVC];
+    tabBarController.viewControllers = @[nav];
 
    
     [self presentViewController:tabBarController animated:YES completion: nil];
